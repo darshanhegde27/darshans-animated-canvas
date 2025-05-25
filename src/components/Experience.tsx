@@ -44,7 +44,7 @@ export const Experience = () => {
       technologies: ["AWS", "Google Cloud", "Java", "Spring Boot", "React", "PostgreSQL", "Kubernetes"]
     },
     {
-      company: "Freelance Projects",
+      company: "Sarany Technologies",
       position: "Full Stack Developer",
       duration: "2020 - 2021",
       location: "Remote",
