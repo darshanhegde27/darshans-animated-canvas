@@ -6,9 +6,9 @@ export const Hero = () => {
   const [currentTitle, setCurrentTitle] = useState(0);
   const titles = [
     "Full Stack Developer",
-    "Cloud Engineer",
-    "DevOps Specialist",
-    "Software Architect"
+    "Software Engineer",
+    "Web Developer",
+    "Backend Developer"
   ];
 
   useEffect(() => {
@@ -22,15 +22,15 @@ export const Hero = () => {
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-purple-600/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-blue-600/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-600/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
       <div className="text-center z-10 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         <div className="animate-fade-in">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             Hi, I'm{" "}
-            <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
               Darshan Hegde
             </span>
           </h1>
@@ -44,8 +44,8 @@ export const Hero = () => {
           </div>
 
           <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Passionate about building scalable applications and cloud infrastructure. 
-            Experienced in modern technologies and DevOps practices.
+            Full Stack Developer with expertise in software development, web applications, 
+            and modern technologies. Passionate about creating scalable solutions.
           </p>
 
           <div className="flex justify-center space-x-6 mb-12">
@@ -53,7 +53,7 @@ export const Hero = () => {
               href="https://www.linkedin.com/in/darshan-hegde-8957b6135/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-purple-600 to-pink-600 p-4 rounded-full hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-purple-500/25"
+              className="bg-gradient-to-r from-blue-600 to-cyan-600 p-4 rounded-full hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-blue-500/25"
             >
               <Linkedin size={24} className="text-white" />
             </a>
@@ -76,13 +76,13 @@ export const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#projects"
-              className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full font-semibold hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-purple-500/25"
+              className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-full font-semibold hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-blue-500/25"
             >
               View My Work
             </a>
             <a
               href="#contact"
-              className="border-2 border-purple-400 text-purple-400 px-8 py-4 rounded-full font-semibold hover:bg-purple-400 hover:text-white transition-all duration-300"
+              className="border-2 border-blue-400 text-blue-400 px-8 py-4 rounded-full font-semibold hover:bg-blue-400 hover:text-white transition-all duration-300"
             >
               Get In Touch
             </a>
@@ -92,7 +92,7 @@ export const Hero = () => {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ChevronDown size={32} className="text-purple-400" />
+        <ChevronDown size={32} className="text-blue-400" />
       </div>
     </section>
   );

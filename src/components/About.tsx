@@ -10,18 +10,18 @@ export const About = () => {
     },
     {
       icon: Cloud,
-      title: "Cloud Architecture",
-      description: "AWS and Azure certified with extensive cloud experience"
+      title: "Cloud Engineering",
+      description: "AWS and Google Cloud certified with enterprise experience"
     },
     {
       icon: Server,
-      title: "DevOps & Infrastructure",
-      description: "CI/CD pipelines, containerization, and automation"
+      title: "System Engineering",
+      description: "Microservices architecture and scalable solutions"
     },
     {
       icon: Database,
       title: "Database Design",
-      description: "SQL and NoSQL database optimization and design"
+      description: "MongoDB and SQL database optimization and design"
     }
   ];
 
@@ -32,24 +32,24 @@ export const About = () => {
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
             About Me
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 mx-auto mb-8"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-300 leading-relaxed">
-              I'm a passionate software engineer with over 8 years of experience in building 
-              scalable web applications and cloud infrastructure. My journey has taken me 
-              through various roles, from full-stack development to DevOps engineering.
+              I'm a passionate Full Stack Developer with expertise in modern web technologies 
+              and cloud platforms. Currently working as a Full Stack Developer, I specialize 
+              in React, Node.js, and building scalable web applications.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              Currently working as a Senior Software Engineer, I specialize in modern 
-              JavaScript frameworks, cloud technologies, and automated deployment pipelines. 
-              I'm always eager to learn new technologies and solve complex problems.
+              My experience includes working with Tata Consultancy Services as an Associate 
+              System Engineer, where I specialized in cloud services like AWS and Google Cloud, 
+              developing enterprise applications and implementing responsive solutions.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies, contributing 
-              to open-source projects, or sharing knowledge with the developer community.
+              I'm passionate about creating user-friendly interfaces, optimizing database 
+              performance, and implementing industry best practices in software development.
             </p>
           </div>
 
@@ -59,9 +59,9 @@ export const About = () => {
               return (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 rounded-xl backdrop-blur-sm border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300 hover:scale-105"
+                  className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 rounded-xl backdrop-blur-sm border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 hover:scale-105"
                 >
-                  <div className="bg-gradient-to-r from-purple-600 to-pink-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                  <div className="bg-gradient-to-r from-blue-600 to-cyan-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                     <Icon size={24} className="text-white" />
                   </div>
                   <h3 className="text-white font-semibold mb-2">{item.title}</h3>

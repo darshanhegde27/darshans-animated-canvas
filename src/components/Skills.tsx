@@ -8,41 +8,41 @@ export const Skills = () => {
     {
       category: "Frontend",
       skills: [
-        { name: "React/Next.js", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "JavaScript", level: 95 },
-        { name: "Tailwind CSS", level: 85 },
-        { name: "HTML/CSS", level: 90 }
+        { name: "React", level: 95 },
+        { name: "JavaScript", level: 90 },
+        { name: "HTML/CSS", level: 90 },
+        { name: "React Native", level: 85 },
+        { name: "Responsive Design", level: 88 }
       ]
     },
     {
       category: "Backend",
       skills: [
-        { name: "Node.js", level: 90 },
-        { name: "Python", level: 85 },
-        { name: "Java", level: 80 },
-        { name: "Express.js", level: 88 },
-        { name: "REST APIs", level: 92 }
+        { name: "Node.js", level: 88 },
+        { name: "Express.js", level: 85 },
+        { name: "Python", level: 80 },
+        { name: "REST APIs", level: 90 },
+        { name: "Microservices", level: 82 }
       ]
     },
     {
       category: "Cloud & DevOps",
       skills: [
-        { name: "AWS", level: 88 },
-        { name: "Docker", level: 85 },
-        { name: "Kubernetes", level: 80 },
-        { name: "CI/CD", level: 90 },
-        { name: "Terraform", level: 75 }
+        { name: "AWS", level: 85 },
+        { name: "Google Cloud", level: 80 },
+        { name: "Docker", level: 75 },
+        { name: "CI/CD", level: 78 },
+        { name: "System Engineering", level: 80 }
       ]
     },
     {
-      category: "Database",
+      category: "Database & Tools",
       skills: [
-        { name: "PostgreSQL", level: 88 },
         { name: "MongoDB", level: 85 },
-        { name: "Redis", level: 80 },
-        { name: "MySQL", level: 85 },
-        { name: "DynamoDB", level: 75 }
+        { name: "SQL", level: 80 },
+        { name: "Git", level: 90 },
+        { name: "Database Design", level: 82 },
+        { name: "Data Analytics", level: 75 }
       ]
     }
   ];
@@ -70,7 +70,7 @@ export const Skills = () => {
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
             Skills & Technologies
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 mx-auto mb-8"></div>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             Here are some of the technologies and tools I work with regularly
           </p>
@@ -80,7 +80,7 @@ export const Skills = () => {
           {skillCategories.map((category, categoryIndex) => (
             <div
               key={categoryIndex}
-              className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 rounded-xl backdrop-blur-sm border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300"
+              className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 rounded-xl backdrop-blur-sm border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300"
             >
               <h3 className="text-xl font-semibold text-white mb-6 text-center">
                 {category.category}
@@ -92,13 +92,13 @@ export const Skills = () => {
                       <span className="text-gray-300 text-sm font-medium">
                         {skill.name}
                       </span>
-                      <span className="text-purple-400 text-sm font-medium">
+                      <span className="text-blue-400 text-sm font-medium">
                         {skill.level}%
                       </span>
                     </div>
                     <div className="w-full bg-slate-700 rounded-full h-2">
                       <div
-                        className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full transition-all duration-1000 ease-out"
+                        className="bg-gradient-to-r from-blue-600 to-cyan-600 h-2 rounded-full transition-all duration-1000 ease-out"
                         style={{
                           width: inView ? `${skill.level}%` : "0%",
                           transitionDelay: `${(categoryIndex * 100) + (skillIndex * 100)}ms`
