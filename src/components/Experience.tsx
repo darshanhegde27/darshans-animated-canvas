@@ -10,56 +10,57 @@ export const Experience = () => {
     {
       company: "VIKI.AI",
       position: "Full Stack Developer",
-      duration: "2023 - Present",
-      location: "Remote",
+      duration: "Oct 2024 - Present",
+      location: "Bengaluru, Karnataka, India",
       logo: "🤖",
       website: "https://viki.ai/",
       color: "from-blue-500 to-cyan-500",
       description: "Leading full-stack development for AI-powered solutions, building scalable web applications with React and Node.js.",
       achievements: [
-        "Developed responsive web applications using React.js and modern JavaScript frameworks",
-        "Built robust backend APIs with Node.js and Express.js for AI integration",
-        "Implemented real-time features and optimized application performance",
-        "Collaborated with AI/ML teams to integrate machine learning models into web interfaces",
-        "Designed and developed user-friendly interfaces for complex AI workflows"
+        "Developed and maintained full-stack web applications using JavaScript, React, and Node.js",
+        "Collaborated with cross-functional teams to design scalable solutions for complex software issues",
+        "Led a project to migrate legacy systems to modern web technologies, improving performance by 30%",
+        "Implemented RESTful APIs to streamline communication between front-end and back-end services",
+        "Conducted code reviews and mentored junior developers, fostering a culture of collaboration and knowledge sharing",
+        "Utilized cloud services and tools such as AWS and Docker to enhance application deployment processes"
       ],
-      technologies: ["React.js", "Node.js", "TypeScript", "Python", "AWS", "MongoDB", "Docker"]
+      technologies: ["React.js", "Node.js", "JavaScript", "AWS", "Docker", "RESTful APIs", "Git"]
+    },
+    {
+      company: "Sarany Technologies",
+      position: "Software Developer",
+      duration: "Mar 2023 - Nov 2024",
+      location: "Bangalore, Karnataka, India",
+      logo: "💻",
+      website: "#",
+      color: "from-emerald-500 to-teal-500",
+      description: "Focused on developing scalable software solutions and real-time data processing systems for enhanced business intelligence.",
+      achievements: [
+        "Implemented RESTful APIs to streamline communication between front-end and back-end services",
+        "Conducted code reviews and mentored junior developers, fostering a culture of collaboration and knowledge sharing",
+        "Designed and developed a real-time data processing system that supported business intelligence operations",
+        "Achieved a 50% increase in analytical efficiency through optimized data processing solutions",
+        "Collaborated with cross-functional teams to deliver high-quality software products"
+      ],
+      technologies: ["JavaScript", "React", "Node.js", "REST APIs", "Real-time Processing", "Business Intelligence"]
     },
     {
       company: "Tata Consultancy Services",
       position: "Associate System Engineer",
-      duration: "2021 - 2023",
-      location: "Bangalore, India",
+      duration: "Oct 2021 - Mar 2023",
+      location: "Bangalore Urban, Karnataka, India",
       logo: "🏢",
       website: "https://tcs.com/",
       color: "from-purple-500 to-indigo-500",
-      description: "Specialized in cloud services and enterprise application development with focus on AWS and Google Cloud platforms.",
+      description: "Specialized in system engineering and enterprise application development with focus on scalable solutions.",
       achievements: [
         "Developed and maintained enterprise-level applications using modern web technologies",
-        "Implemented cloud solutions on AWS and Google Cloud Platform",
-        "Optimized database performance and designed efficient data structures",
-        "Collaborated with cross-functional teams to deliver high-quality software solutions",
-        "Mentored junior developers and conducted code reviews"
+        "Implemented cloud solutions and optimized system performance",
+        "Collaborated with teams to deliver scalable software solutions",
+        "Gained expertise in system architecture and enterprise-level development",
+        "Contributed to various client projects with high-quality deliverables"
       ],
-      technologies: ["AWS", "Google Cloud", "Java", "Spring Boot", "React", "PostgreSQL", "Kubernetes"]
-    },
-    {
-      company: "Sarany Technologies",
-      position: "Full Stack Developer",
-      duration: "2020 - 2021",
-      location: "Remote",
-      logo: "💻",
-      website: "#",
-      color: "from-emerald-500 to-teal-500",
-      description: "Delivered custom web solutions for various clients, focusing on responsive design and user experience.",
-      achievements: [
-        "Built responsive websites and web applications for small to medium businesses",
-        "Developed e-commerce platforms with payment gateway integration",
-        "Created custom CMS solutions using modern frameworks",
-        "Implemented SEO best practices and performance optimizations",
-        "Provided ongoing maintenance and technical support to clients"
-      ],
-      technologies: ["React", "Node.js", "MongoDB", "Stripe API", "Tailwind CSS", "Firebase"]
+      technologies: ["Java", "Spring Boot", "System Design", "Enterprise Applications", "Cloud Computing"]
     }
   ];
 
@@ -68,7 +69,6 @@ export const Experience = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setInView(true);
-          // Trigger loading animations with delays
           experiences.forEach((_, index) => {
             setTimeout(() => {
               setLoadingStates(prev => {
@@ -91,7 +91,6 @@ export const Experience = () => {
 
   return (
     <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-800 via-slate-900 to-blue-950 relative overflow-hidden">
-      {/* Background decorations */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(59,130,246,0.1),transparent_50%)]"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_70%,rgba(147,51,234,0.1),transparent_50%)]"></div>
 
@@ -120,7 +119,6 @@ export const Experience = () => {
                 animationDelay: `${index * 300}ms`
               }}
             >
-              {/* Loading overlay */}
               {!loadingStates[index] && (
                 <div className="absolute inset-0 bg-slate-900/90 flex items-center justify-center z-10">
                   <div className="flex items-center space-x-3">
@@ -216,9 +214,6 @@ export const Experience = () => {
                   </div>
                 </div>
               </div>
-
-              {/* Hover effect overlay */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${exp.color}/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none`}></div>
             </div>
           ))}
         </div>
