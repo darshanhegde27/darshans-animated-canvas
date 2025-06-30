@@ -66,7 +66,7 @@ export const Experience = () => {
         "Gained expertise in system architecture and enterprise-level development",
         "Contributed to various client projects with high-quality deliverables"
       ],
-      technologies: ["Java", "Spring Boot", "System Design", "Enterprise Applications", "Cloud Computing"]
+      technologies: ["C#", "Spring Boot", "System Design", "Enterprise Applications", "Cloud Computing"]
     }
   ];
 
