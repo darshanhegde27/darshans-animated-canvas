@@ -1,4 +1,3 @@
-
 import { Code, Server, Cloud, Database, User, Briefcase, Trophy, Target } from "lucide-react";
 
 export const About = () => {
