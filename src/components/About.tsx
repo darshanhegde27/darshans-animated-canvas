@@ -1,3 +1,4 @@
+
 import { Code, Server, Cloud, Database, User, Briefcase, Trophy, Target } from "lucide-react";
 
 export const About = () => {
@@ -30,7 +31,7 @@ export const About = () => {
 
   const stats = [
     { icon: Briefcase, number: "3+", label: "Years Experience", color: "text-blue-400" },
-    { icon: Trophy, number: "50+", label: "Projects Completed", color: "text-green-400" },
+    { icon: Trophy, number: "5+", label: "Projects Completed", color: "text-green-400" },
     { icon: Target, number: "100%", label: "Client Satisfaction", color: "text-purple-400" },
     { icon: User, number: "10+", label: "Team Members Led", color: "text-orange-400" }
   ];
